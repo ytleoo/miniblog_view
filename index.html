@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <header>
+       <div class="container">
+        　<h1><a href="/">Blog</a></h1>
+        <ul class="nav">
+<!--          <% if user_signed_in? %>-->
+            <li>
+<!--              <%= link_to "New", new_blog_path, method: :get %>-->
+           <a href="new.html">New</a>
+            </li>
+            <li>
+<!--              <%= link_to "SignOut", destroy_user_session_path, method: :delete %>-->
+           <a href="#">SignOut</a>
+            </li>
+<!--
+          <% else %>
+             <li>
+              <%= link_to "SignIn", new_user_session_path %>
+           <a href="#">SignIn</a>
+            </li>
+            <li>
+              <%= link_to "SignUp", new_user_registration_path %>
+           <a href="#">SignUp</a>
+            </li>
+          <% end %>
+-->
+        </ul>
+      </div>
+    </header>
+    
+  <div class="blog_container">
+<!--
+  <% @blogs.each do |blog| %>
+    <%= render partial: "blog", locals: { blog: blog } %>
+  <% end %>
+-->
+
+   <div class="blogbox">
+<!--    <p><%= simple_format(blog.text) %></p>-->
+    <p>こんにちは</p>
+     <ul class="btn">
+          <li>
+          <a href="show.html">SHOW</a>
+<!--             <%= link_to "SHOW", blog_path(blog) %>-->
+          </li>
+          <li>
+<!--            <%= link_to "EDIT", edit_blog_path(blog) %>-->
+         <a href="edit.html">EDIT</a>
+          </li>
+          <li>
+<!--            <%= link_to "DESTROY", blog_path(blog), method: :delete , data: {confirm: "削除しますか？"} %>-->
+         <a href="#">DESTROY</a>
+          </li>
+      </ul>
+   </div>
+</div>
+
+</body>
+</html>

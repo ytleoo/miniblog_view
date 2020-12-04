@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <header>
+       <div class="container">
+        　<h1><a href="/">Blog</a></h1>
+        <ul class="nav">
+            <li>
+           <a href="new.html">New</a>
+            </li>
+            <li>
+           <a href="#">SignOut</a>
+            </li>
+        </ul>
+      </div>
+    </header>
+  
+   <div class="blog_container">
+   
+    <h3 class="formlbl">本文</h3>
+    <textarea name="text" placeholder="text" rows="10" cols="30" class="textbox"></textarea>
+    <input type="submit" value="SEND" class="formbtn">
+    
+<!--
+  <%# form_tag("/blogs/#{@blog.id}", method: :patch) do  %>
+  <%= form_for @blog do |f| %>
+    <%= f.label :本文, class: "formlbl" %>
+    <%= f.text_area :text, placeholder: '本文',class: "textbox" %>
+    <%= f.submit "送信",class: "formbtn" %>
+  <% end %>
+-->
+
+</div>
+
+
+</body>
+</html>
