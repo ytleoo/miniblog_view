@@ -89,6 +89,11 @@ header {
   background: #55c7b9;
 }
 
+h1 {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
 /*---------------new-----------------*/
 .new_blog {
   width: 90%;
@@ -140,4 +145,21 @@ input[type="submit"] {
 
 .formbtn:hover {
   background: #55c7b9;
+}
+
+.titlebox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  resize: none;
+  padding: 0;
+  border: 0;
+  outline: none;
+  background: transparent;
+  display: block;
+  width: 100%;
+  margin-bottom: 60px;
+  font-size: 1em;
+  height: 40px;
+  line-height: 1.5em;
 }
